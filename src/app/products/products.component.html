@@ -1,0 +1,19 @@
+
+<div class="cards-section">
+    @for(product of products; track product.id){
+    <div class="cards">
+      <div class="card h-100">
+        <img [src]="product.img" class="img1">
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+          <p class="card-text">{{product.price}}</p>
+          <button type="button" class="btn btn-secondary" (click)="addToCart(product)">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  
+  }
+
+</div>
+
+

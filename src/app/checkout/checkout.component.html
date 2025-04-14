@@ -1,0 +1,13 @@
+<h3>checkout</h3>
+<button (click)="placeOrder()">Place Order</button>
+<p>Total: ${{ total }}</p>
+
+<div class="cards-section">
+  @for (item of checkoutItems; track item.id) {
+    <div class="card">
+        <img [src]="item.img" class="img-cart">
+      <p>{{ item.name }} - ${{ item.price }} x {{ item.quantity }}</p>
+    </div>
+  }
+</div>
+

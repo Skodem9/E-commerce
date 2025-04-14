@@ -1,0 +1,805 @@
+{
+  "Sneakers": [
+    {
+      "id": "1",
+      "name": "Nike Air Jordan 1",
+      "img": "/assets/jordan1.png",
+      "price": "100"
+    },
+    {
+      "id": "2",
+      "name": "Nike Air Jordan 2",
+      "img": "/assets/jordan2.png",
+      "price": "100"
+    },
+    {
+      "id": "3",
+      "name": "Nike Air Jordan 3",
+      "img": "/assets/jordan3.png",
+      "price": "100"
+    },
+    {
+      "id": "4",
+      "name": "Nike Air Jordan 4",
+      "img": "/assets/jordan4.png",
+      "price": "107"
+    },
+    {
+      "id": "5",
+      "name": "Nike Air Jordan 5",
+      "img": "/assets/jordan5.png",
+      "price": "105"
+    },
+    {
+      "id": "6",
+      "name": "Nike Air Jordan 6",
+      "img": "/assets/jordan6.png",
+      "price": "120"
+    }
+  ],
+  "T-shirts": [
+    {
+      "id": "1",
+      "name": "Scuderia Ferrari black",
+      "img": "/assets/t-shirts/t-shirt1.png",
+      "price": "45"
+    },
+    {
+      "id": "1",
+      "name": "Scuderia Ferrari red",
+      "img": "/assets/t-shirts/t-shirt2.png",
+      "price": "45"
+    }
+  ],
+  "Jackets": [
+    {
+      "id": "1",
+      "name": "Scuderia Ferrari black jacket",
+      "img": "/assets/jackets/jacket1.png",
+      "price": "120"
+    },
+    {
+      "id": "1",
+      "name": "Scuderia Ferrari red jacket",
+      "img": "/assets/jackets/jacket2.png",
+      "price": "125"
+    }
+  ],
+  "Trousers": [
+    {
+      "id": "1",
+      "name": "Scuderia Ferrari Race",
+      "img": "/assets/trousers/trouser1.png",
+      "price": "100"
+    },
+    {
+      "id": "1",
+      "name": "Scuderia Ferrari black",
+      "img": "/assets/trousers/trouser2.png",
+      "price": "105"
+    }
+  ],
+  "Cargo": [
+    {
+      "id": "1",
+      "name": "Essentials no.1",
+      "img": "/assets/cargo/cargo1.png",
+      "price": "24.99"
+    },
+    {
+      "id": "1",
+      "name": "Wardrobe Essesntials",
+      "img": "/assets/cargo/cargo2.png",
+      "price": "70"
+    }
+  ],
+  "Jeans": [
+    {
+      "id": "1",
+      "name": "Premium Air Jeans",
+      "img": "/assets/jeans/jeans1.png",
+      "price": "24.99"
+    },
+    {
+      "id": "1",
+      "name": "Premium Air Jeans",
+      "img": "/assets/jeans/jeans2.png",
+      "price": "70"
+    }
+  ],
+  "Hoodies": [
+    {
+      "id": "1",
+      "name": "Jordan flight",
+      "img": "/assets/hoodies/hoodies1.png",
+      "price": "60.97"
+    },
+    {
+      "id": "1",
+      "name": "Jordan sport",
+      "img": "/assets/hoodies/hoodies2.png",
+      "price": "65.97"
+    }
+  ],
+  "Casuals": [
+    {
+      "id": "1",
+      "name": "Nike Airforce 1",
+      "img": "/assets/casuals/casual1.png",
+      "price": "125"
+    },
+    {
+      "id": "1",
+      "name": "Nike Airforce 1 ",
+      "img": "/assets/casuals/casual2.png",
+      "price": "135"
+    }
+  ],
+  "Users": [
+    {
+      "id": "",
+      "fullname": "saitej kodem",
+      "username": "saitej",
+      "email": "saitej@gmail.com",
+      "password": "adsdad"
+    },
+    {
+      "id": "",
+      "fullname": "apple inc",
+      "username": "apple",
+      "email": "apple@gmail.com",
+      "password": "iphone"
+    }
+  ],
+  "Orders": [
+    {
+      "id": "42aa",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-11T04:45:14.105Z",
+      "items": [
+        {
+          "id": "4",
+          "name": "Nike Air Jordan 4",
+          "img": "/assets/jordan4.png",
+          "price": 107,
+          "quantity": 5
+        },
+        {
+          "id": "5",
+          "name": "Nike Air Jordan 5",
+          "img": "/assets/jordan5.png",
+          "price": 105,
+          "quantity": 1
+        },
+        {
+          "id": "6",
+          "name": "Nike Air Jordan 6",
+          "img": "/assets/jordan6.png",
+          "price": 120,
+          "quantity": 1
+        }
+      ],
+      "total": 760
+    },
+    {
+      "id": "54e6",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-11T05:09:09.836Z",
+      "items": [
+        {
+          "id": "4",
+          "name": "Nike Air Jordan 4",
+          "img": "/assets/jordan4.png",
+          "price": 107,
+          "quantity": 2
+        },
+        {
+          "id": "5",
+          "name": "Nike Air Jordan 5",
+          "img": "/assets/jordan5.png",
+          "price": 105,
+          "quantity": 1
+        }
+      ],
+      "total": 319
+    },
+    {
+      "id": "b0a3",
+      "userId": "1",
+      "username": "saitej",
+      "date": "2025-04-11T05:11:58.689Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Nike Air Jordan 1",
+          "img": "/assets/jordan1.png",
+          "price": 100,
+          "quantity": 2
+        }
+      ],
+      "total": 200
+    },
+    {
+      "id": "b299",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-11T15:25:07.160Z",
+      "items": [
+        {
+          "id": "4",
+          "name": "Nike Air Jordan 4",
+          "img": "/assets/jordan4.png",
+          "price": 107,
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "Nike Air Jordan 5",
+          "img": "/assets/jordan5.png",
+          "price": 105,
+          "quantity": 1
+        }
+      ],
+      "total": 212
+    },
+    {
+      "id": "6f75",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-11T19:26:56.020Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Nike Air Jordan 1",
+          "img": "/assets/jordan1.png",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Nike Air Jordan 2",
+          "img": "/assets/jordan2.png",
+          "price": 100,
+          "quantity": 1
+        }
+      ],
+      "total": 200
+    },
+    {
+      "id": "020c",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-11T19:45:48.532Z",
+      "items": [
+        {
+          "id": "4",
+          "name": "Nike Air Jordan 4",
+          "img": "/assets/jordan4.png",
+          "price": 107,
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "Nike Air Jordan 5",
+          "img": "/assets/jordan5.png",
+          "price": 105,
+          "quantity": 3
+        },
+        {
+          "id": "2",
+          "name": "Nike Air Jordan 2",
+          "img": "/assets/jordan2.png",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Nike Air Jordan 3",
+          "img": "/assets/jordan3.png",
+          "price": 100,
+          "quantity": 1
+        }
+      ],
+      "total": 622
+    },
+    {
+      "id": "8b20",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-09T02:24:10.837Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Nike Air Jordan 1",
+          "img": "/assets/jordan1.png",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Nike Air Jordan 2",
+          "img": "/assets/jordan2.png",
+          "price": 100,
+          "quantity": 1
+        }
+      ],
+      "total": 200
+    },
+    {
+      "id": "19c2",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-12T02:56:19.599Z",
+      "items": [],
+      "total": 0
+    },
+    {
+      "id": "42b8",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-12T02:56:23.917Z",
+      "items": [],
+      "total": 0
+    },
+    {
+      "id": "bc85",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-12T03:27:51.470Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Nike Air Jordan 1",
+          "img": "/assets/jordan1.png",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Nike Air Jordan 2",
+          "img": "/assets/jordan2.png",
+          "price": 100,
+          "quantity": 1
+        }
+      ],
+      "total": 200
+    },
+    {
+      "id": "9758",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-12T03:32:19.470Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Nike Air Jordan 1",
+          "img": "/assets/jordan1.png",
+          "price": 100,
+          "quantity": 3
+        }
+      ],
+      "total": 300
+    },
+    {
+      "id": "8ce9",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-13T15:15:54.255Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Nike Air Jordan 1",
+          "img": "/assets/jordan1.png",
+          "price": 100,
+          "quantity": 1
+        }
+      ],
+      "total": 100
+    },
+    {
+      "id": "9dba",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-13T15:26:54.814Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari black",
+          "img": "/assets/t-shirts/t-shirt1.png",
+          "price": 45,
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Nike Air Jordan 1",
+          "img": "/assets/jordan1.png",
+          "price": 100,
+          "quantity": 1
+        }
+      ],
+      "total": 145
+    },
+    {
+      "id": "f0be",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-13T15:34:52.343Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari black",
+          "img": "/assets/t-shirts/t-shirt1.png",
+          "price": 45,
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari red",
+          "img": "/assets/t-shirts/t-shirt2.png",
+          "price": 45,
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Nike Air Jordan 1",
+          "img": "/assets/jordan1.png",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Nike Air Jordan 2",
+          "img": "/assets/jordan2.png",
+          "price": 100,
+          "quantity": 1
+        }
+      ],
+      "total": 290
+    },
+    {
+      "id": "294a",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-13T17:25:28.236Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari black",
+          "img": "/assets/t-shirts/t-shirt1.png",
+          "price": 45,
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Nike Air Jordan 2",
+          "img": "/assets/jordan2.png",
+          "price": 100,
+          "quantity": 1
+        }
+      ],
+      "total": 145
+    },
+    {
+      "id": "01f4",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-13T17:45:09.168Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Nike Air Jordan 1",
+          "img": "/assets/jordan1.png",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari black",
+          "img": "/assets/t-shirts/t-shirt1.png",
+          "price": 45,
+          "quantity": 1
+        }
+      ],
+      "total": 145
+    },
+    {
+      "id": "e515",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-13T21:14:54.812Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari black",
+          "img": "/assets/t-shirts/t-shirt1.png",
+          "price": 45,
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari black jacket",
+          "img": "/assets/jackets/jacket1.png",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Jordan flight",
+          "img": "/assets/hoodies/hoodies1.png",
+          "price": 60.97,
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari black jacket",
+          "img": "/assets/jackets/jacket1.png",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Premium Air Jeans",
+          "img": "/assets/jeans/jeans1.png",
+          "price": 24.99,
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari Race",
+          "img": "/assets/trousers/trouser1.png",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Essentials no.1",
+          "img": "/assets/cargo/cargo1.png",
+          "price": 24.99,
+          "quantity": 1
+        },
+        {
+          "id": "2",
+          "name": "Nike Air Jordan 2",
+          "img": "/assets/jordan2.png",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Nike Airforce 1 ",
+          "img": "/assets/casuals/casual2.png",
+          "price": 135,
+          "quantity": 1
+        }
+      ],
+      "total": 730.95
+    },
+    {
+      "id": "b196",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-14T01:28:02.858Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari black",
+          "img": "/assets/t-shirts/t-shirt1.png",
+          "price": 45,
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Wardrobe Essesntials",
+          "img": "/assets/cargo/cargo2.png",
+          "price": 70,
+          "quantity": 1
+        }
+      ],
+      "total": 115
+    }
+  ],
+  "CanceledOrders": [
+    {
+      "id": "54e6",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-11T05:09:09.836Z",
+      "items": [
+        {
+          "id": "4",
+          "name": "Nike Air Jordan 4",
+          "img": "/assets/jordan4.png",
+          "price": 107,
+          "quantity": 2
+        },
+        {
+          "id": "5",
+          "name": "Nike Air Jordan 5",
+          "img": "/assets/jordan5.png",
+          "price": 105,
+          "quantity": 1
+        }
+      ],
+      "total": 319
+    },
+    {
+      "id": "42aa",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-11T04:45:14.105Z",
+      "items": [
+        {
+          "id": "4",
+          "name": "Nike Air Jordan 4",
+          "img": "/assets/jordan4.png",
+          "price": 107,
+          "quantity": 5
+        },
+        {
+          "id": "5",
+          "name": "Nike Air Jordan 5",
+          "img": "/assets/jordan5.png",
+          "price": 105,
+          "quantity": 1
+        },
+        {
+          "id": "6",
+          "name": "Nike Air Jordan 6",
+          "img": "/assets/jordan6.png",
+          "price": 120,
+          "quantity": 1
+        }
+      ],
+      "total": 760
+    },
+    {
+      "id": "b0a3",
+      "userId": "1",
+      "username": "saitej",
+      "date": "2025-04-11T05:11:58.689Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Nike Air Jordan 1",
+          "img": "/assets/jordan1.png",
+          "price": 100,
+          "quantity": 2
+        }
+      ],
+      "total": 200
+    },
+    {
+      "id": "020c",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-11T19:45:48.532Z",
+      "items": [
+        {
+          "id": "4",
+          "name": "Nike Air Jordan 4",
+          "img": "/assets/jordan4.png",
+          "price": 107,
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "Nike Air Jordan 5",
+          "img": "/assets/jordan5.png",
+          "price": 105,
+          "quantity": 3
+        },
+        {
+          "id": "2",
+          "name": "Nike Air Jordan 2",
+          "img": "/assets/jordan2.png",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "name": "Nike Air Jordan 3",
+          "img": "/assets/jordan3.png",
+          "price": 100,
+          "quantity": 1
+        }
+      ],
+      "total": 622
+    },
+    {
+      "id": "42b8",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-12T02:56:23.917Z",
+      "items": [],
+      "total": 0
+    },
+    {
+      "id": "19c2",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-12T02:56:19.599Z",
+      "items": [],
+      "total": 0
+    },
+    {
+      "id": "42b8",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-12T02:56:23.917Z",
+      "items": [],
+      "total": 0
+    },
+    {
+      "id": "19c2",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-12T02:56:19.599Z",
+      "items": [],
+      "total": 0
+    },
+    {
+      "id": "9dba",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-13T15:26:54.814Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari black",
+          "img": "/assets/t-shirts/t-shirt1.png",
+          "price": 45,
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Nike Air Jordan 1",
+          "img": "/assets/jordan1.png",
+          "price": 100,
+          "quantity": 1
+        }
+      ],
+      "total": 145
+    },
+    {
+      "id": "42b8",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-12T02:56:23.917Z",
+      "items": [],
+      "total": 0
+    },
+    {
+      "id": "19c2",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-12T02:56:19.599Z",
+      "items": [],
+      "total": 0
+    },
+    {
+      "id": "01f4",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-13T17:45:09.168Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Nike Air Jordan 1",
+          "img": "/assets/jordan1.png",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari black",
+          "img": "/assets/t-shirts/t-shirt1.png",
+          "price": 45,
+          "quantity": 1
+        }
+      ],
+      "total": 145
+    }
+  ]
+}

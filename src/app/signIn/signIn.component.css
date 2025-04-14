@@ -1,0 +1,17 @@
+form{
+    margin-top: 10%;
+    padding: 30px;
+    margin-left: 20%;
+}
+button{
+    padding: 10px;
+    width: 100px;
+}
+
+.form-check {
+    padding: 20px;
+}
+
+.form-control{
+    width: 50%;
+}
