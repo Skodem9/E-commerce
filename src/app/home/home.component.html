@@ -1,6 +1,19 @@
-<h1>home</h1>
 
-<div class="home-wrapper">
+
+<div class="page-background">
+@if(showHome) {
+<div class="hero">
+
+        <img src="/assets/homepic.jpg" alt="Homepage Image">
+    <div class="hero-text">
+        <h1 class="text1">Online Shopping</h1>
+            <h3 class="text2">Welcome to our website</h3>
+    </div>
+</div>
+}
+
+@else {
+<div class="home-wrapper with-background">
     
     @if(showSneakers){
         <h2>Sneakers</h2>
@@ -14,32 +27,35 @@
     }
 
     @if(showTrousers){
-        <h3>Trousers</h3>
+        <h2>Trousers</h2>
         <app-products></app-products>
     }
 
     @if(showJackets){
-        <h3>Jackets</h3>
+        <h2>Jackets</h2>
         <app-products></app-products>
     }
 
     @if(showCargo){
-        <h3>Cargo</h3>
+        <h2>Cargo</h2>
         <app-products></app-products>
     }
 
     @if(showJeans){
-        <h3>Jeans</h3>
+        <h2>Jeans</h2>
         <app-products></app-products>
     }
 
     @if(showHoodies){
-        <h3>Hoodies</h3>
+        <h2>Hoodies</h2>
         <app-products></app-products>
     }
 
     @if(showCasuals){
-        <h3>Casuals</h3>
+        <h2>Casuals</h2>
         <app-products></app-products>
     }
+</div>
+}
+
 </div>

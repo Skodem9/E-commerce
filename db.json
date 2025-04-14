@@ -39,13 +39,13 @@
   ],
   "T-shirts": [
     {
-      "id": "1",
+      "id": "7",
       "name": "Scuderia Ferrari black",
       "img": "/assets/t-shirts/t-shirt1.png",
       "price": "45"
     },
     {
-      "id": "1",
+      "id": "8",
       "name": "Scuderia Ferrari red",
       "img": "/assets/t-shirts/t-shirt2.png",
       "price": "45"
@@ -53,13 +53,13 @@
   ],
   "Jackets": [
     {
-      "id": "1",
+      "id": "9",
       "name": "Scuderia Ferrari black jacket",
       "img": "/assets/jackets/jacket1.png",
       "price": "120"
     },
     {
-      "id": "1",
+      "id": "10",
       "name": "Scuderia Ferrari red jacket",
       "img": "/assets/jackets/jacket2.png",
       "price": "125"
@@ -67,13 +67,13 @@
   ],
   "Trousers": [
     {
-      "id": "1",
+      "id": "11",
       "name": "Scuderia Ferrari Race",
       "img": "/assets/trousers/trouser1.png",
       "price": "100"
     },
     {
-      "id": "1",
+      "id": "12",
       "name": "Scuderia Ferrari black",
       "img": "/assets/trousers/trouser2.png",
       "price": "105"
@@ -81,13 +81,13 @@
   ],
   "Cargo": [
     {
-      "id": "1",
+      "id": "13",
       "name": "Essentials no.1",
       "img": "/assets/cargo/cargo1.png",
-      "price": "24.99"
+      "price": "26"
     },
     {
-      "id": "1",
+      "id": "14",
       "name": "Wardrobe Essesntials",
       "img": "/assets/cargo/cargo2.png",
       "price": "70"
@@ -95,13 +95,13 @@
   ],
   "Jeans": [
     {
-      "id": "1",
+      "id": "15",
       "name": "Premium Air Jeans",
       "img": "/assets/jeans/jeans1.png",
-      "price": "24.99"
+      "price": "25"
     },
     {
-      "id": "1",
+      "id": "16",
       "name": "Premium Air Jeans",
       "img": "/assets/jeans/jeans2.png",
       "price": "70"
@@ -109,27 +109,27 @@
   ],
   "Hoodies": [
     {
-      "id": "1",
+      "id": "17",
       "name": "Jordan flight",
       "img": "/assets/hoodies/hoodies1.png",
-      "price": "60.97"
+      "price": "62"
     },
     {
-      "id": "1",
+      "id": "18",
       "name": "Jordan sport",
       "img": "/assets/hoodies/hoodies2.png",
-      "price": "65.97"
+      "price": "66"
     }
   ],
   "Casuals": [
     {
-      "id": "1",
+      "id": "19",
       "name": "Nike Airforce 1",
       "img": "/assets/casuals/casual1.png",
       "price": "125"
     },
     {
-      "id": "1",
+      "id": "20",
       "name": "Nike Airforce 1 ",
       "img": "/assets/casuals/casual2.png",
       "price": "135"
@@ -598,6 +598,283 @@
         }
       ],
       "total": 115
+    },
+    {
+      "id": "2843",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-14T02:34:00.905Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari black",
+          "img": "/assets/t-shirts/t-shirt1.png",
+          "price": 45,
+          "quantity": 6
+        },
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari black",
+          "img": "/assets/t-shirts/t-shirt1.png",
+          "price": 45,
+          "quantity": 6
+        },
+        {
+          "id": "1",
+          "name": "Premium Air Jeans",
+          "img": "/assets/jeans/jeans1.png",
+          "price": 24.99,
+          "quantity": 5
+        },
+        {
+          "id": "1",
+          "name": "Premium Air Jeans",
+          "img": "/assets/jeans/jeans2.png",
+          "price": 70,
+          "quantity": 5
+        }
+      ],
+      "total": 1014.95
+    },
+    {
+      "id": "7afe",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-14T06:14:52.564Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari black",
+          "img": "/assets/t-shirts/t-shirt1.png",
+          "price": 45,
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari red",
+          "img": "/assets/t-shirts/t-shirt2.png",
+          "price": 45,
+          "quantity": 1
+        }
+      ],
+      "total": 90
+    },
+    {
+      "id": "ecd5",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-14T14:34:12.103Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Nike Air Jordan 1",
+          "img": "/assets/jordan1.png",
+          "price": 100,
+          "quantity": 3
+        },
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari black",
+          "img": "/assets/t-shirts/t-shirt1.png",
+          "price": 45,
+          "quantity": 3
+        },
+        {
+          "id": "1",
+          "name": "Jordan flight",
+          "img": "/assets/hoodies/hoodies1.png",
+          "price": 60.97,
+          "quantity": 3
+        },
+        {
+          "id": "1",
+          "name": "Nike Airforce 1 ",
+          "img": "/assets/casuals/casual2.png",
+          "price": 135,
+          "quantity": 3
+        }
+      ],
+      "total": 1022.91
+    },
+    {
+      "id": "5d77",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-14T16:23:52.986Z",
+      "items": [
+        {
+          "id": "9",
+          "name": "Scuderia Ferrari black jacket",
+          "img": "/assets/jackets/jacket1.png",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "id": "9",
+          "name": "Scuderia Ferrari black jacket",
+          "img": "/assets/jackets/jacket1.png",
+          "price": 120,
+          "quantity": 1
+        }
+      ],
+      "total": 240
+    },
+    {
+      "id": "9e69",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-14T16:27:06.167Z",
+      "items": [
+        {
+          "id": "17",
+          "name": "Jordan flight",
+          "img": "/assets/hoodies/hoodies1.png",
+          "price": 62,
+          "quantity": 1
+        },
+        {
+          "id": "17",
+          "name": "Jordan flight",
+          "img": "/assets/hoodies/hoodies1.png",
+          "price": 62,
+          "quantity": 1
+        }
+      ],
+      "total": 124
+    },
+    {
+      "id": "fcef",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-14T16:35:32.998Z",
+      "items": [
+        {
+          "id": "9",
+          "name": "Scuderia Ferrari black jacket",
+          "img": "/assets/jackets/jacket1.png",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "id": "9",
+          "name": "Scuderia Ferrari black jacket",
+          "img": "/assets/jackets/jacket1.png",
+          "price": 120,
+          "quantity": 1
+        }
+      ],
+      "total": 240
+    },
+    {
+      "id": "2316",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-14T16:36:21.725Z",
+      "items": [
+        {
+          "id": "17",
+          "name": "Jordan flight",
+          "img": "/assets/hoodies/hoodies1.png",
+          "price": 62,
+          "quantity": 1
+        },
+        {
+          "id": "17",
+          "name": "Jordan flight",
+          "img": "/assets/hoodies/hoodies1.png",
+          "price": 62,
+          "quantity": 1
+        }
+      ],
+      "total": 124
+    },
+    {
+      "id": "d793",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-14T16:37:49.019Z",
+      "items": [
+        {
+          "id": "17",
+          "name": "Jordan flight",
+          "img": "/assets/hoodies/hoodies1.png",
+          "price": 62,
+          "quantity": 1
+        },
+        {
+          "id": "17",
+          "name": "Jordan flight",
+          "img": "/assets/hoodies/hoodies1.png",
+          "price": 62,
+          "quantity": 1
+        }
+      ],
+      "total": 124
+    },
+    {
+      "id": "dee9",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-14T17:02:14.749Z",
+      "items": [
+        {
+          "id": "4",
+          "name": "Nike Air Jordan 4",
+          "img": "/assets/jordan4.png",
+          "price": 107,
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "Nike Air Jordan 5",
+          "img": "/assets/jordan5.png",
+          "price": 105,
+          "quantity": 3
+        },
+        {
+          "id": "2",
+          "name": "Nike Air Jordan 2",
+          "img": "/assets/jordan2.png",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "id": "9",
+          "name": "Scuderia Ferrari black jacket",
+          "img": "/assets/jackets/jacket1.png",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "id": "10",
+          "name": "Scuderia Ferrari red jacket",
+          "img": "/assets/jackets/jacket2.png",
+          "price": 125,
+          "quantity": 1
+        },
+        {
+          "id": "17",
+          "name": "Jordan flight",
+          "img": "/assets/hoodies/hoodies1.png",
+          "price": 62,
+          "quantity": 1
+        },
+        {
+          "id": "12",
+          "name": "Scuderia Ferrari black",
+          "img": "/assets/trousers/trouser2.png",
+          "price": 105,
+          "quantity": 1
+        },
+        {
+          "id": "19",
+          "name": "Nike Airforce 1",
+          "img": "/assets/casuals/casual1.png",
+          "price": 125,
+          "quantity": 1
+        }
+      ],
+      "total": 1059
     }
   ],
   "CanceledOrders": [
@@ -800,6 +1077,43 @@
         }
       ],
       "total": 145
+    },
+    {
+      "id": "ecd5",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-14T14:34:12.103Z",
+      "items": [
+        {
+          "id": "1",
+          "name": "Nike Air Jordan 1",
+          "img": "/assets/jordan1.png",
+          "price": 100,
+          "quantity": 3
+        },
+        {
+          "id": "1",
+          "name": "Scuderia Ferrari black",
+          "img": "/assets/t-shirts/t-shirt1.png",
+          "price": 45,
+          "quantity": 3
+        },
+        {
+          "id": "1",
+          "name": "Jordan flight",
+          "img": "/assets/hoodies/hoodies1.png",
+          "price": 60.97,
+          "quantity": 3
+        },
+        {
+          "id": "1",
+          "name": "Nike Airforce 1 ",
+          "img": "/assets/casuals/casual2.png",
+          "price": 135,
+          "quantity": 3
+        }
+      ],
+      "total": 1022.91
     }
   ]
 }

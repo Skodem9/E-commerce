@@ -1,5 +1,7 @@
+
+<div class="background">
 <h3>checkout</h3>
-<button (click)="placeOrder()">Place Order</button>
+<button class="button" (click)="placeOrder()">Place Order</button>
 <p>Total: ${{ total }}</p>
 
 <div class="cards-section">
@@ -9,5 +11,6 @@
       <p>{{ item.name }} - ${{ item.price }} x {{ item.quantity }}</p>
     </div>
   }
+</div>
 </div>
 

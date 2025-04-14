@@ -1,12 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('/assets/homepic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  /* 👈 makes background stay fixed */
+}
+
 .header {
     height: 20%;
+  
 }
 
-.router{
+.router {
     height: 80%;
-}
+    overflow-y: auto;    /* enables vertical scroll */
+   
 
+}
 
 .footer {
     height: 0%;
-} 
+}

@@ -43,10 +43,14 @@ export class CartService{
         this.calculateTotalPrice()
     }
 
+    clearCheckout(){
+        this.checkoutItems = []
+    }
     clearCart() {
         this.cartItems.set([])
         this.cartCount.set(0)
         this.totalPrice.set(0)
+        
     }
 
     updateQuantity(item: Product, change: number){

@@ -1,3 +1,33 @@
+.background{
+  .background {
+    position: relative;
+    width: 100%;
+    height: 100%;  
+    padding: 40px 20px;
+    z-index: 1;
+} 
+}
+
+.background::before {
+  content: "";
+  background-image: url('/assets/homepic.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.background > * {
+  position: relative;
+  z-index: 1;
+}
+
+
 h3 {
     margin-top: 60px;
     text-align: center;
@@ -61,7 +91,7 @@ h3 {
   }
   
   .card-text {
-    font-size: 1rem;
+    font-size: 10px;
     color: #555;
     margin-bottom: 12px;
   }
@@ -81,7 +111,12 @@ h3 {
   
   p {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #333;
+  }
+
+  .button{
+    margin-left: 47%;
+    background-color: #2e3869 ;
   }
   

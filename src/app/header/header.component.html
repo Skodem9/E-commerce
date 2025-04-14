@@ -1,82 +1,56 @@
-
 <header>
-    <nav class="navbar navbar-expand-lg ">
-        
-          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-            <ul class="navbar-nav">
-              
-              
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Products
-                    </button>
-                    <ul class="dropdown-menu ">
-                      <li><a class="dropdown-item active" href="#">Topwear</a></li>
-                      <ul>
-                        <li><a class="dropdown-item" [routerLink]="['/home']" [queryParams]="{tshirts: true}">Tshirts</a></li>
-                        <li><a class="dropdown-item" [routerLink]="['/home']" [queryParams]="{jackets: true}">Jackets</a></li>
-                        <li><a class="dropdown-item" [routerLink]="['/home']" [queryParams]="{hoodies: true}">Hoodies</a></li>
-                      </ul>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">BottomWear</a></li>
-                      <ul>
-                        <li><a class="dropdown-item" [routerLink]="['/home']" [queryParams]="{jeans: true}">Jeans</a></li>
-                        <li><a class="dropdown-item" [routerLink]="['/home']" [queryParams]="{trousers: true}">Trousers</a></li>
-                        <li><a class="dropdown-item" [routerLink]="['/home']" [queryParams]="{cargo: true}">Cargo</a></li>
-                      </ul>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item">Footwear</a></li>
-                      <ul>
-                        <li><a class="dropdown-item" [routerLink]="['/home']" [queryParams]="{sneakers: true}">Sneakers</a></li>
-                        <li><a class="dropdown-item" [routerLink]="['/home']" [queryParams]="{casuals: true}">Casuals</a></li>
-                      </ul>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Separated link</a></li>
-                    </ul>
-                  </div>
-              
-              
-              <li class="nav-home">
-                <a class="nav-link" routerLink="home">Home</a>
-              </li>
-
-              @if(currentUser; as user){
-              <li class="nav-user">
-                <span class="nav-link"> Hello, {{user.fullname}}</span>
-              </li>
-
-              <li class="nav-signOut">
-                <a class="nav-link" (click)="signOut()">Sign Out</a>
-              </li>
-              <li class="nav-checkout">
-                <a class="nav-link" routerLink="checkout">Checkout</a>
-              </li>
-              <li class="nav-myOrders">
-                <a class="nav-link" routerLink="myOrders">My Orders</a>
-              </li>
-            } @else{
-              <li class="nav-signIn">
-                <a class="nav-link" routerLink="signIn">Sign In</a>
-              </li>
-              <li class="nav-signIn">
-                <a class="nav-link" routerLink="signUp">Create an account</a>
-              </li>
-            }
-              
+  <nav class="navbar navbar-expand-lg">
+    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </button>
+          <ul class="dropdown-menu">
+            <li>Topwear</li>
+            <ul>
+              <li><a class="dropdown-item" [routerLink]="['/home']" [queryParams]="{tshirts: true}">Tshirts</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/home']" [queryParams]="{jackets: true}">Jackets</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/home']" [queryParams]="{hoodies: true}">Hoodies</a></li>
             </ul>
-            
-          </div>
+
+            <li><hr class="dropdown-divider"></li>
+            <li>BottomWear</li>
+            <ul>
+              <li><a class="dropdown-item" [routerLink]="['/home']" [queryParams]="{jeans: true}">Jeans</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/home']" [queryParams]="{trousers: true}">Trousers</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/home']" [queryParams]="{cargo: true}">Cargo</a></li>
+            </ul>
+
+            <li><hr class="dropdown-divider"></li>
+            <li>Footwear</li>
+            <ul>
+              <li><a class="dropdown-item" [routerLink]="['/home']" [queryParams]="{sneakers: true}">Sneakers</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/home']" [queryParams]="{casuals: true}">Casuals</a></li>
+            </ul>
+          </ul>
+        </div>
+
+        <li class="nav-home"><a class="nav-link" routerLink="home">Home</a></li>
+
+        @if(currentUser; as user) {
           
-          <a class="nav-link nav-cart" routerLink="cart">Cart( {{cartCount() }})</a>
-        
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn" type="submit">Search</button>
-          </form>
-        
-      </nav>
-    </header>
+          <li class="nav-signOut"><a class="nav-link" (click)="signOut()">Sign Out</a></li>
+          <li class="nav-checkout"><a class="nav-link" routerLink="checkout">Checkout</a></li>
+          <li class="nav-myOrders"><a class="nav-link" routerLink="myOrders">My Orders</a></li>
+          <li class="nav-user"><span class="nav-link">Hello, {{user.fullname}}</span></li>
+        } @else {
+          <li class="nav-signIn"><a class="nav-link" routerLink="signIn">Sign In</a></li>
+          <li class="nav-signIn"><a class="nav-link" routerLink="signUp">Create an account</a></li>
+        }
+      </ul>
+    </div>
 
+    <a class="nav-link nav-cart" routerLink="cart">Cart({{ cartCount() }})</a>
 
-    
-  
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn" type="submit">Search</button>
+    </form>
+  </nav>
+</header>

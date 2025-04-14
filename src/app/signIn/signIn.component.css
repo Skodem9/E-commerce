@@ -1,17 +1,54 @@
-form{
+.background{
+    content: "";
+    background-image: url('/assets/homepic.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;  
+}
+
+form {
     margin-top: 10%;
     padding: 30px;
-    margin-left: 20%;
+    margin-left: 35%;
+    width: 30%;
+    color: rgb(0, 0, 0);
+    background: #2e3869;  
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
-button{
+
+button {
     padding: 10px;
     width: 100px;
+    background-color: #081346;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3f4a7b;
 }
 
 .form-check {
     padding: 20px;
 }
 
-.form-control{
-    width: 50%;
+.form-control {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.link{
+    color: black;
 }

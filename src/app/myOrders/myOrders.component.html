@@ -1,19 +1,25 @@
+
+<div class="background">
 <h3>My Orders</h3>
 
-@for(order of orders; track order.date) {
-  <div class="order-card">
-    <h3>Date: {{ order.date | date:'short' }}</h3>
-    <p>Total: ${{ order.total }}</p>
-
-    <ul>
-      @for(item of order.items; track item.id) {
-        <li>
-          <img [src]="item.img" alt="{{ item.name }}">
-          <span>{{ item.name }} - ${{ item.price }} x {{ item.quantity }}</span>
-        </li>
-      }
-    </ul>
-
-    <button (click)="cancelOrder(order.id)" [disabled]="cancelOrderButton(order.date)"> Cancel Order</button>
+  <div>
+    @for(order of orders; track order.date) {
+      <div class="order-card">
+        <h3>Date: {{ order.date | date:'short' }}</h3>
+        <p>Total: ${{ order.total }}</p>
+    
+        <ul>
+          @for(item of order.items; track item.id) {
+            <li>
+              <img [src]="item.img" alt="{{ item.name }}">
+              <span>{{ item.name }} - ${{ item.price }} x {{ item.quantity }}</span>
+            </li>
+          }
+        </ul>
+    
+        <button (click)="cancelOrder(order.id)" [disabled]="cancelOrderButton(order.date)"> Cancel Order</button>
+      </div>
+    }
   </div>
-}
+
+</div>

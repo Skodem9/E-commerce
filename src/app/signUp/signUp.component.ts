@@ -6,7 +6,7 @@ import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-signUp',
-  imports: [FormsModule, RouterLink],
+  imports: [FormsModule],
   standalone: true,
   templateUrl: './signUp.component.html',
   styleUrl: './signUp.component.css'

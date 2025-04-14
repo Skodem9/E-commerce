@@ -1,11 +1,14 @@
 
+<div class="background">
+
 <h3 class="heading">Shopping Cart</h3>
 <div class="checkout-section">
-<span> <button (click)="checkout()">Proceed to checkout({{cartCount()}})</button> </span>
-<button (click)="clearCart()">clear cart</button>
+  
+<span> <button class="button1" (click)="checkout()">Proceed to checkout({{cartCount()}})</button> </span>
+<button class="button2" (click)="clearCart()">clear cart</button>
 </div>
 
-<p>Total = ${{ totalPrice()}}</p>
+<p class="total">Total = ${{ totalPrice()}}</p>
 <div class="cards-section">
     @for(item of cartItems; track item.id){
     <div class="cards">
@@ -15,14 +18,15 @@
           <h5 class="card-title">{{item.name}}</h5>
           <p class="card-text">${{item.price}} x {{item.quantity}}</p>
 
-          <button (click)="changeQuantity(item, -1)" [disabled]="item.quantity <= 1">-</button>
+          <button class="button1" (click)="changeQuantity(item, -1)" [disabled]="item.quantity <= 1">-</button>
           <span>{{item.quantity}}</span>
-          <button (click)="changeQuantity(item, 1)">+</button>
+          <button class="button1" (click)="changeQuantity(item, 1)">+</button>
 
-          <button (click)="removeItem(item)">remove</button>
+          <button class="button1" (click)="removeItem(item)">remove</button>
         </div>
       </div>
     </div>
   
   }
+</div>
 </div>

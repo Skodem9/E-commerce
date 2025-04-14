@@ -18,8 +18,13 @@ export class HomeComponent {
   showJeans = false
   showHoodies = false
   showCasuals = false
+
+  showHome = true
   
-  constructor(private router: ActivatedRoute){
+  constructor(private router: ActivatedRoute){}
+
+
+ngOnInit(){
     this.router.queryParams.subscribe(params =>{
       this.showSneakers = params['sneakers'] === 'true'
       this.showTshirts = params['tshirts'] === 'true'
@@ -30,6 +35,12 @@ export class HomeComponent {
       this.showHoodies = params['hoodies'] === 'true'
       this.showCasuals = params['casuals'] === 'true'
 
+      this.showHome = !(
+        this.showSneakers || this.showTshirts || this.showCargo ||
+        this.showCasuals || this.showHoodies || this.showJackets ||
+        this.showJeans || this.showTrousers
+      )
+
     })
-  }
+}
 }

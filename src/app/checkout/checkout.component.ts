@@ -38,10 +38,10 @@ export class CheckoutComponent implements OnInit {
           items: this.checkoutItems,
           total: this.total
         };
-
         this.http.post('http://localhost:3000/Orders', order).subscribe(() => {
           alert('Order placed successfully!');
           this.cartService.clearCart();
+          this.cartService.clearCheckout()
           this.router.navigate(['/myOrders']);
         });
       } else {
@@ -50,6 +50,7 @@ export class CheckoutComponent implements OnInit {
     });
   }
 
+  
   totalAmount(){
     this.totalPrice = this.cartService.totalPrice
   }
