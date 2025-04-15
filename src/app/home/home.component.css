@@ -53,11 +53,10 @@
     }
 }
 
-
-  
   .home-wrapper {
+    display: flex;
     position: relative;
-    padding: 80px;
+    padding: 40px;
     z-index: 1;
   }
   
@@ -75,24 +74,103 @@
     z-index: 0;
   }
   
-  .home-wrapper h2, .home-wrapper app-products, .home-wrapper .filters {
-    margin-top: 2%;
+  .home-wrapper .filters {
+    margin-top: 7%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .home-wrapper h2, .home-wrapper app-products{
+    margin-top: 7%;
+    margin-left: 60px;
     text-align: center;
     position: relative;
     z-index: 1;
   }
   
-  .filters {
-    margin: 20px 0;
+  .product-layout {
     display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    z-index: 1;
-    position: relative;
+    align-items: flex-start;
   }
   
-  .filter-group {
+  .sidebar {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 250px;
+    padding: 20px;
+    background: #2e3869;
+    opacity: 70%;
+    border-right: 1px solid #2e3869;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    overflow-y: auto;
+
+  }
+  
+  .sidebar-title {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    margin: 20px 0 10px;
+  }
+  
+  .category-list p {
+    margin: 8px 0;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .filters {
     display: flex;
     flex-direction: column;
-    min-width: 150px;
+    gap: 20px;
+  }
+  
+  .filter-group label {
+    display: flex;
+    color: black;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  
+  .filter-group select,
+  .filter-group input {
+    margin-top: 6px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .clear-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+  }
+
+
+  
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+  
+  .sort-section select {
+    margin-left: 8px;
+    padding: 8px;
+    border-radius: 4px;
   }
