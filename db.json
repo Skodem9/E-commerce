@@ -1,138 +1,659 @@
 {
-  "Sneakers": [
+  "Products": [
     {
       "id": "1",
       "name": "Nike Air Jordan 1",
       "img": "/assets/jordan1.png",
-      "price": "100"
+      "price": "150",
+      "size": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "category": "Sneakers",
+      "gender": "Unisex"
     },
     {
       "id": "2",
-      "name": "Nike Air Jordan 2",
-      "img": "/assets/jordan2.png",
-      "price": "100"
+      "name": "Adidas Ultraboost",
+      "img": "/assets/jordan4.png",
+      "price": "180",
+      "size": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "category": "Sneakers",
+      "gender": "Unisex"
     },
     {
       "id": "3",
-      "name": "Nike Air Jordan 3",
-      "img": "/assets/jordan3.png",
-      "price": "100"
+      "name": "Converse Chuck Taylor All Star",
+      "img": "/assets/jordan5.png",
+      "price": "60",
+      "size": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "category": "Sneakers",
+      "gender": "Unisex"
     },
     {
       "id": "4",
-      "name": "Nike Air Jordan 4",
-      "img": "/assets/jordan4.png",
-      "price": "107"
+      "name": "Nike Air Max 90",
+      "img": "/assets/jordan6.png",
+      "price": "130",
+      "size": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "category": "Sneakers",
+      "gender": "Unisex"
     },
     {
       "id": "5",
-      "name": "Nike Air Jordan 5",
-      "img": "/assets/jordan5.png",
-      "price": "105"
+      "name": "Vans Old Skool",
+      "img": "/assets/jordan1.png",
+      "price": "70",
+      "size": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "category": "Sneakers",
+      "gender": "Unisex"
     },
     {
       "id": "6",
-      "name": "Nike Air Jordan 6",
-      "img": "/assets/jordan6.png",
-      "price": "120"
-    }
-  ],
-  "T-shirts": [
+      "name": "Reebok Classic Leather",
+      "img": "/assets/jordan2.png",
+      "price": "85",
+      "size": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "category": "Sneakers",
+      "gender": "Unisex"
+    },
     {
       "id": "7",
-      "name": "Scuderia Ferrari black",
-      "img": "/assets/t-shirts/t-shirt1.png",
-      "price": "45"
+      "name": "Puma Suede Classic",
+      "img": "/assets/jordan3.png",
+      "price": "75",
+      "size": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "category": "Sneakers",
+      "gender": "Unisex"
     },
     {
       "id": "8",
-      "name": "Scuderia Ferrari red",
-      "img": "/assets/t-shirts/t-shirt2.png",
-      "price": "45"
-    }
-  ],
-  "Jackets": [
+      "name": "New Balance 574",
+      "img": "/assets/jordan4.png",
+      "price": "100",
+      "size": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "category": "Sneakers",
+      "gender": "Unisex"
+    },
     {
       "id": "9",
-      "name": "Scuderia Ferrari black jacket",
-      "img": "/assets/jackets/jacket1.png",
-      "price": "120"
+      "name": "Adidas Stan Smith",
+      "img": "/assets/jordan1.png",
+      "price": "90",
+      "size": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "category": "Sneakers",
+      "gender": "Unisex"
     },
     {
       "id": "10",
-      "name": "Scuderia Ferrari red jacket",
-      "img": "/assets/jackets/jacket2.png",
-      "price": "125"
-    }
-  ],
-  "Trousers": [
+      "name": "Nike Blazer Mid '77",
+      "img": "/assets/jordan2.png",
+      "price": "110",
+      "size": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "category": "Sneakers",
+      "gender": "Unisex"
+    },
     {
       "id": "11",
-      "name": "Scuderia Ferrari Race",
-      "img": "/assets/trousers/trouser1.png",
-      "price": "100"
+      "name": "ASICS GEL-Kayano 28",
+      "img": "/assets/jordan3.png",
+      "price": "160",
+      "size": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "category": "Sneakers",
+      "gender": "Male"
     },
     {
       "id": "12",
-      "name": "Scuderia Ferrari black",
-      "img": "/assets/trousers/trouser2.png",
-      "price": "105"
-    }
-  ],
-  "Cargo": [
+      "name": "Brooks Ghost 14",
+      "img": "/assets/jordan4.png",
+      "price": "130",
+      "size": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "category": "Sneakers",
+      "gender": "Female"
+    },
     {
       "id": "13",
-      "name": "Essentials no.1",
-      "img": "/assets/cargo/cargo1.png",
-      "price": "26"
+      "name": "Under Armour HOVR Phantom 2",
+      "img": "/assets/jordan5.png",
+      "price": "150",
+      "size": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "category": "Sneakers",
+      "gender": "Male"
     },
     {
       "id": "14",
-      "name": "Wardrobe Essesntials",
-      "img": "/assets/cargo/cargo2.png",
-      "price": "70"
-    }
-  ],
-  "Jeans": [
+      "name": "Saucony Triumph 19",
+      "img": "/assets/jordan6.png",
+      "price": "140",
+      "size": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "category": "Sneakers",
+      "gender": "Female"
+    },
     {
       "id": "15",
-      "name": "Premium Air Jeans",
-      "img": "/assets/jeans/jeans1.png",
-      "price": "25"
+      "name": "Fila Disruptor II",
+      "img": "/assets/jordan1.png",
+      "price": "95",
+      "size": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "category": "Sneakers",
+      "gender": "Female"
     },
     {
       "id": "16",
-      "name": "Premium Air Jeans",
-      "img": "/assets/jeans/jeans2.png",
-      "price": "70"
-    }
-  ],
-  "Hoodies": [
+      "name": "Timberland 6-Inch Premium Boot",
+      "img": "/assets/jordan2.png",
+      "price": "190",
+      "size": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "category": "Sneakers",
+      "gender": "Male"
+    },
     {
       "id": "17",
-      "name": "Jordan flight",
-      "img": "/assets/hoodies/hoodies1.png",
-      "price": "62"
+      "name": "Dr. Martens 1460",
+      "img": "/assets/jordan3.png",
+      "price": "170",
+      "size": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "category": "Sneakers",
+      "gender": "Unisex"
     },
     {
       "id": "18",
-      "name": "Jordan sport",
-      "img": "/assets/hoodies/hoodies2.png",
-      "price": "66"
-    }
-  ],
-  "Casuals": [
+      "name": "Skechers D'Lites",
+      "img": "/assets/jordan4.png",
+      "price": "70",
+      "size": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "category": "Sneakers",
+      "gender": "Female"
+    },
     {
       "id": "19",
-      "name": "Nike Airforce 1",
-      "img": "/assets/casuals/casual1.png",
-      "price": "125"
+      "name": "Crocs Classic Clog",
+      "img": "/assets/jordan5.png",
+      "price": "50",
+      "size": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "category": "Sneakers",
+      "gender": "Unisex"
     },
     {
       "id": "20",
-      "name": "Nike Airforce 1 ",
+      "name": "Reebok Nano X2",
+      "img": "/assets/jordan2.png",
+      "price": "130",
+      "size": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "category": "Sneakers",
+      "gender": "Unisex"
+    },
+    {
+      "id": "21",
+      "name": "Classic Cotton T-Shirt",
+      "img": "/assets/t-shirts/t-shirt2.png",
+      "price": "25",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "category": "TShirts",
+      "gender": "Unisex"
+    },
+    {
+      "id": "22",
+      "name": "Graphic Print T-Shirt",
+      "img": "/assets/t-shirts/t-shirt2.png",
+      "price": "30",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "category": "TShirts",
+      "gender": "Male"
+    },
+    {
+      "id": "23",
+      "name": "Striped Linen T-Shirt",
+      "img": "/assets/t-shirts/t-shirt1.png",
+      "price": "35",
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "category": "TShirts",
+      "gender": "Female"
+    },
+    {
+      "id": "24",
+      "name": "Chino Trousers",
+      "img": "/assets/trousers/trouser2.png",
+      "price": "60",
+      "size": [
+        "30",
+        "32",
+        "34",
+        "36"
+      ],
+      "category": "Trousers",
+      "gender": "Male"
+    },
+    {
+      "id": "50",
+      "name": "Chino Trousers",
+      "img": "/assets/trousers/trouser1.png",
+      "price": "60",
+      "size": [
+        "30",
+        "32",
+        "34",
+        "36"
+      ],
+      "category": "Trousers",
+      "gender": "Male"
+    },
+    {
+      "id": "51",
+      "name": "Chino Trousers",
+      "img": "/assets/trousers/trouser2.png",
+      "price": "60",
+      "size": [
+        "30",
+        "32",
+        "34",
+        "36"
+      ],
+      "category": "Trousers",
+      "gender": "Male"
+    },
+    {
+      "id": "53",
+      "name": "Chino Trousers",
+      "img": "/assets/trousers/trouser1.png",
+      "price": "60",
+      "size": [
+        "30",
+        "32",
+        "34",
+        "36"
+      ],
+      "category": "Trousers",
+      "gender": "Male"
+    },
+    {
+      "id": "54",
+      "name": "Chino Trousers",
+      "img": "/assets/trousers/trouser2.png",
+      "price": "60",
+      "size": [
+        "30",
+        "32",
+        "34",
+        "36"
+      ],
+      "category": "Trousers",
+      "gender": "Male"
+    },
+    {
+      "id": "55",
+      "name": "Chino Trousers",
+      "img": "/assets/trousers/trouser1.png",
+      "price": "60",
+      "size": [
+        "30",
+        "32",
+        "34",
+        "36"
+      ],
+      "category": "Trousers",
+      "gender": "Male"
+    },
+    {
+      "id": "25",
+      "name": "Wide Leg Trousers",
+      "img": "/assets/trousers/trouser1.png",
+      "price": "55",
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "category": "Trousers",
+      "gender": "Female"
+    },
+    {
+      "id": "26",
+      "name": "Slim Fit Trousers",
+      "img": "/assets/trousers/trouser2.png",
+      "price": "70",
+      "size": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "category": "Trousers",
+      "gender": "Male"
+    },
+    {
+      "id": "27",
+      "name": "Classic Cargo Pants",
+      "img": "/assets/cargo/cargo2.png",
+      "price": "80",
+      "size": [
+        "30",
+        "32",
+        "34",
+        "36"
+      ],
+      "category": "Cargo",
+      "gender": "Male"
+    },
+    {
+      "id": "28",
+      "name": "Utility Cargo Pants",
+      "img": "/assets/cargo/cargo1.png",
+      "price": "90",
+      "size": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "category": "Cargo",
+      "gender": "Unisex"
+    },
+    {
+      "id": "29",
+      "name": "Slim Fit Cargo Pants",
+      "img": "/assets/cargo/cargo1.png",
+      "price": "85",
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "category": "Cargo",
+      "gender": "Female"
+    },
+    {
+      "id": "30",
+      "name": "Oxford Casual Shirt",
+      "img": "/assets/casuals/casual1.png",
+      "price": "45",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "category": "Casual",
+      "gender": "Male"
+    },
+    {
+      "id": "31",
+      "name": "Linen Casual Shirt",
       "img": "/assets/casuals/casual2.png",
-      "price": "135"
+      "price": "50",
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "category": "Casual",
+      "gender": "Unisex"
+    },
+    {
+      "id": "32",
+      "name": "Flannel Casual Shirt",
+      "img": "/assets/casuals/casual1.png",
+      "price": "55",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "category": "Casual",
+      "gender": "Male"
+    },
+    {
+      "id": "33",
+      "name": "Skinny Jeans",
+      "img": "/assets/jeans/jeans1.png",
+      "price": "65",
+      "size": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "category": "Jeans",
+      "gender": "Female"
+    },
+    {
+      "id": "34",
+      "name": "Straight Leg Jeans",
+      "img": "/assets/jeans/jeans2.png",
+      "price": "70",
+      "size": [
+        "30",
+        "32",
+        "34",
+        "36"
+      ],
+      "category": "Jeans",
+      "gender": "Male"
+    },
+    {
+      "id": "35",
+      "name": "Bootcut Jeans",
+      "img": "/assets/jeans/jeans1.png",
+      "price": "75",
+      "size": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "category": "Jeans",
+      "gender": "Unisex"
+    },
+    {
+      "id": "36",
+      "name": "Denim Jacket",
+      "img": "/assets/jackets/jacket2.png",
+      "price": "85",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "category": "Jackets",
+      "gender": "Unisex"
+    },
+    {
+      "id": "37",
+      "name": "Leather Jacket",
+      "img": "/assets/jackets/jacket1.png",
+      "price": "150",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "category": "Jackets",
+      "gender": "Male"
+    },
+    {
+      "id": "38",
+      "name": "Bomber Jacket",
+      "img": "/assets/jackets/jacket1.png",
+      "price": "95",
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "category": "Jackets",
+      "gender": "Female"
+    },
+    {
+      "id": "39",
+      "name": "Classic Hoodie",
+      "img": "/assets/hoodies/hoodies1.png",
+      "price": "40",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "category": "Hoodies",
+      "gender": "Unisex"
+    },
+    {
+      "id": "40",
+      "name": "Zip-Up Hoodie",
+      "img": "/assets/hoodies/hoodies2.png",
+      "price": "45",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "category": "Hoodies",
+      "gender": "Male"
+    },
+    {
+      "id": "41",
+      "name": "Oversized Hoodie",
+      "img": "/assets/hoodies/hoodies1.png",
+      "price": "50",
+      "size": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "category": "Hoodies",
+      "gender": "Female"
     }
   ],
   "Users": [
@@ -875,6 +1396,121 @@
         }
       ],
       "total": 1059
+    },
+    {
+      "id": "db4c",
+      "userId": "",
+      "username": "apple",
+      "date": "2025-04-14T17:44:01.141Z",
+      "items": [
+        {
+          "id": "2",
+          "name": "Adidas Ultraboost",
+          "img": "/assets/ultraboost.png",
+          "price": 180,
+          "size": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "category": "Sneakers",
+          "gender": "Unisex",
+          "quantity": 3
+        },
+        {
+          "id": "3",
+          "name": "Converse Chuck Taylor All Star",
+          "img": "/assets/chucktaylor.png",
+          "price": 60,
+          "size": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "category": "Sneakers",
+          "gender": "Unisex",
+          "quantity": 3
+        },
+        {
+          "id": "5",
+          "name": "Vans Old Skool",
+          "img": "/assets/oldskool.png",
+          "price": 70,
+          "size": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "category": "Sneakers",
+          "gender": "Unisex",
+          "quantity": 1
+        },
+        {
+          "id": "24",
+          "name": "Chino Trousers",
+          "img": "/assets/chino-trousers.png",
+          "price": 60,
+          "size": [
+            "30",
+            "32",
+            "34",
+            "36"
+          ],
+          "category": "Trousers",
+          "gender": "Male",
+          "quantity": 3
+        },
+        {
+          "id": "25",
+          "name": "Wide Leg Trousers",
+          "img": "/assets/wide-leg-trousers.png",
+          "price": 55,
+          "size": [
+            "XS",
+            "S",
+            "M",
+            "L"
+          ],
+          "category": "Trousers",
+          "gender": "Female",
+          "quantity": 3
+        },
+        {
+          "id": "36",
+          "name": "Denim Jacket",
+          "img": "/assets/denim-jacket.png",
+          "price": 85,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "Jackets",
+          "gender": "Unisex",
+          "quantity": 1
+        },
+        {
+          "id": "37",
+          "name": "Leather Jacket",
+          "img": "/assets/leather-jacket.png",
+          "price": 150,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "Jackets",
+          "gender": "Male",
+          "quantity": 2
+        }
+      ],
+      "total": 1520
     }
   ],
   "CanceledOrders": [

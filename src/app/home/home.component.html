@@ -1,61 +1,104 @@
-
-
 <div class="page-background">
-@if(showHome) {
-<div class="hero">
 
+    @if (searchResults.length > 0) {
+      <div class="home-wrapper with-background">
+        <h2>Search Results</h2>
+  
+        <div class="filters">
+          <div class="filter-group">
+            <label>
+              Size:
+              <select [(ngModel)]="selectedSize">
+                <option [ngValue]="null">All</option>
+                @for (size of uniqueSizes; track $index) {
+                  <option [ngValue]="size">{{ size }}</option>
+                }
+              </select>
+            </label>
+          </div>
+  
+          <div class="filter-group">
+            <label>
+              Gender:
+              <select [(ngModel)]="selectedGender">
+                <option [ngValue]="null">All</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Unisex">Unisex</option>
+              </select>
+            </label>
+          </div>
+  
+          <div class="filter-group">
+            <label>
+              Price Range:
+              <input type="number" [(ngModel)]="priceRange.min" placeholder="Min Price" />
+              <input type="number" [(ngModel)]="priceRange.max" placeholder="Max Price" />
+            </label>
+          </div>
+          <div class="filter-group">
+            <label>
+              Sort by:
+              <select [(ngModel)]="selectedSort">
+                <option [ngValue]="null">Default</option>
+                <option value="asc">Price: Low to high</option>
+                <option value="desc">Price: High to Low</option>
+              </select>
+            </label>
+          </div>
+          <button (click)="clearFilters()">Clear Filters</button>
+        </div>
+        
+  
+        <app-products [products]="getFilteredResults()"></app-products>
+      </div>
+    }
+  
+    @else if (showHome) {
+      <div class="hero">
         <img src="/assets/homepic.jpg" alt="Homepage Image">
-    <div class="hero-text">
-        <h1 class="text1">Online Shopping</h1>
-            <h3 class="text2">Welcome to our website</h3>
-    </div>
-</div>
-}
-
-@else {
-<div class="home-wrapper with-background">
-    
-    @if(showSneakers){
-        <h2>Sneakers</h2>
-        <app-products></app-products>
+        <div class="hero-text">
+          <h1 class="text1">Online Shopping</h1>
+          <h3 class="text2">Welcome to our website</h3>
+        </div>
+      </div>
     }
-
-    @if(showTshirts){
-        <h2>Tshirts</h2>
-        <app-products></app-products>
-
+  
+    @else {
+      <div class="home-wrapper with-background">
+        @if (showSneakers) {
+          <h2>Sneakers</h2>
+          <app-products></app-products>
+        }
+        @if (showTshirts) {
+          <h2>Tshirts</h2>
+          <app-products></app-products>
+        }
+        @if (showTrousers) {
+          <h2>Trousers</h2>
+          <app-products></app-products>
+        }
+        @if (showJackets) {
+          <h2>Jackets</h2>
+          <app-products></app-products>
+        }
+        @if (showCargo) {
+          <h2>Cargo</h2>
+          <app-products></app-products>
+        }
+        @if (showJeans) {
+          <h2>Jeans</h2>
+          <app-products></app-products>
+        }
+        @if (showHoodies) {
+          <h2>Hoodies</h2>
+          <app-products></app-products>
+        }
+        @if (showCasuals) {
+          <h2>Casuals</h2>
+          <app-products></app-products>
+        }
+      </div>
     }
-
-    @if(showTrousers){
-        <h2>Trousers</h2>
-        <app-products></app-products>
-    }
-
-    @if(showJackets){
-        <h2>Jackets</h2>
-        <app-products></app-products>
-    }
-
-    @if(showCargo){
-        <h2>Cargo</h2>
-        <app-products></app-products>
-    }
-
-    @if(showJeans){
-        <h2>Jeans</h2>
-        <app-products></app-products>
-    }
-
-    @if(showHoodies){
-        <h2>Hoodies</h2>
-        <app-products></app-products>
-    }
-
-    @if(showCasuals){
-        <h2>Casuals</h2>
-        <app-products></app-products>
-    }
-</div>
-}
-
-</div>
+  </div>
+  

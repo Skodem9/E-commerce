@@ -4,10 +4,11 @@ import { CommonModule } from '@angular/common';
 import { CartService } from './services/cart.service';
 import { Users } from './interfaces/users';
 import { UsersService } from './services/user.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, CommonModule],
+  imports: [RouterLink, CommonModule,FormsModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
@@ -16,6 +17,7 @@ private cartService = inject(CartService)
 cartItems: any;
 cartCount: any;
 currentUser: Users | null = null
+searchProduct: string = ''
 
   constructor(
     private router: Router,
@@ -34,5 +36,11 @@ currentUser: Users | null = null
   signOut(){
     this.userService.clearCurrentUser()
     this.router.navigate(['/singIn'])
+  }
+
+  onSearch(){
+    if(this.searchProduct.trim()){
+      this.router.navigate(['/home'], { queryParams: { search: this.searchProduct.trim()}})
+    }
   }
 }

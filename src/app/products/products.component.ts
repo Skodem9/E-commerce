@@ -14,19 +14,24 @@ import { ProductsService } from '../header/services/products.service';
 })
 export class ProductsComponent implements OnInit {
 
+  @Input() products: Product[] | null = null
 
   private productService = inject(ProductsService)
   private cartService = inject(CartService)
   private route = inject(ActivatedRoute)
-  products: Product[] = []
+  
 
   ngOnInit() {
+
+    if(this.products && this.products.length > 0) {
+      return
+    }
     this.route.queryParams.subscribe(params => {
       if(params['sneakers']){
         this.fetchProducts('Sneakers')
       }
       else if (params['tshirts']){
-        this.fetchProducts('T-shirts')
+        this.fetchProducts('Tshirts')
       }
       else if (params['trousers']){
         this.fetchProducts('Trousers')
@@ -44,15 +49,15 @@ export class ProductsComponent implements OnInit {
         this.fetchProducts('Hoodies')
       }
       else if (params['casuals']){
-        this.fetchProducts('Casuals')
+        this.fetchProducts('Casual')
       }
     })
 
   }
 
   fetchProducts(productType: string){
-    this.productService.getProducts(productType).subscribe(data =>{
-      this.products = data
+    this.productService.getProducts().subscribe(data =>{
+      this.products = data.filter(product => product.category.toLowerCase() === productType.toLowerCase())
     })
   }
 

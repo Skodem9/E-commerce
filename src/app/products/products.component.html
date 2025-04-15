@@ -1,4 +1,5 @@
 
+@if(products){
 <div class="cards-section">
     @for(product of products; track product.id){
     <div class="cards">
@@ -15,5 +16,6 @@
   }
 
 </div>
+}
 
 

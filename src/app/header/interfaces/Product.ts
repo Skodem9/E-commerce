@@ -3,5 +3,8 @@ export interface Product{
     name: string,
     img: string,
     price: number,
-    quantity: number
+    quantity: number,
+    size: (string |number)[],
+    category: string,
+    gender: string
 }

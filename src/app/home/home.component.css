@@ -75,10 +75,24 @@
     z-index: 0;
   }
   
-  .home-wrapper h2, .home-wrapper app-products {
-    margin-top: 8%;
+  .home-wrapper h2, .home-wrapper app-products, .home-wrapper .filters {
+    margin-top: 2%;
     text-align: center;
-    position: inherit;
+    position: relative;
     z-index: 1;
   }
   
+  .filters {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+  }

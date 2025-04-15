@@ -9,11 +9,11 @@ import { Product } from "../interfaces/Product";
 export class ProductsService{
     
 
-    url="http://localhost:3000/"
+    url="http://localhost:3000/Products"
 
     constructor(private http:HttpClient) { }
 
-    getProducts(productType: string): Observable<Product[]>{
-        return this.http.get<any[]>(`${this.url}${productType}`);
+    getProducts(): Observable<Product[]>{
+        return this.http.get<Product[]>(this.url)
     }
 }
