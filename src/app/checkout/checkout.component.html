@@ -1,7 +1,7 @@
 
 <div class="background">
 <h3>checkout</h3>
-<button class="button" (click)="placeOrder()">Place Order</button>
+<button class="button" (click)="placeOrder()" [disabled]="checkoutItems.length === 0" >Place Order</button>
 <p>Total: ${{ total }}</p>
 
 <div class="cards-section">

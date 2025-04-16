@@ -16,6 +16,7 @@ export class SignUpComponent {
     username = '';
     email = '';
     password = '';
+    id = ''
 
     constructor(private userService: UsersService, private router: Router){}
 
@@ -29,11 +30,11 @@ export class SignUpComponent {
         }
         else{
             const newUser: Users = {
+                id: Date.now().toString(),
                 fullname: this.fullname,
                 username: this.username,
                 email: this.email,
                 password: this.password,
-                id: ''
             }
         
         
@@ -44,6 +45,7 @@ export class SignUpComponent {
             this.username = ''
             this.email = ''
             this.password = ''
+            this.id = ''
             this.router.navigate(['/signIn'])
         })
 

@@ -10,20 +10,26 @@ import { CommonModule } from '@angular/common';
   templateUrl: './myOrders.component.html',
   styleUrl: './myOrders.component.css'
 })
-export class MyOrdersComponent {
+export class MyOrdersComponent implements OnInit {
   orders: Orders[]=[]
 
   constructor(private http: HttpClient, private userService: UsersService){}
 
   ngOnInit(): void{
-    this.userService.currentUser.subscribe(user =>{
-        if(user){
-            this.http.get<Orders[]>(`http://localhost:3000/Orders?userId=${user.id}`).subscribe(data =>{
-                this.orders = data.sort((a, b)=> new Date(b.date).getTime() - new Date(a.date).getTime())
-            })
-        }
-    })
+    this.loadUserOrders()
   }
+
+  loadUserOrders(): void{
+    this.userService.currentUser.subscribe(user =>{
+      if(user){
+          this.http.get<Orders[]>(`http://localhost:3000/Orders?userId=${user.id.toString()}`).subscribe(data =>{
+              this.orders = data.sort((a, b)=> new Date(b.date).getTime() - new Date(a.date).getTime())
+          })
+      } else {
+        this.orders = []
+      }
+  })
+  } 
 
   cancelOrderButton(orderDate: string): boolean {
     const orderPlacedDate = new Date(orderDate)
@@ -36,15 +42,19 @@ export class MyOrdersComponent {
 
   }
 
-  cancelOrder(orderId: number): void {
-    const orderToCancel = this.orders.find(order => order.id === orderId)
+  cancelOrder(orderId: string): void {
+    const orderToCancel = this.orders.find(order => order.id === orderId.toString())
     if(!orderToCancel) return
 
     this.http.post('http://localhost:3000/CanceledOrders', orderToCancel).subscribe(() => {
       console.log('order moved to CanceledOrders')
 
+      this.http.delete(`http://localhost:3000/Orders/${orderId}`).subscribe(() => {
+        console.log('order deleted from orders')
+
       this.orders = this.orders.filter(order => order.id !==orderId)
     })
+  })
 
   }
 }

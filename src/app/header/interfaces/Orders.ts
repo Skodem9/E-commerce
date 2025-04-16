@@ -1,8 +1,8 @@
 import { Product } from "./Product";
 
 export interface Orders{
-    id: number,
-    userId: number,
+    id: string,
+    userId: string,
     username: string,
     date: string,
     items: Product[],

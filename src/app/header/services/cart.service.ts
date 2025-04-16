@@ -27,11 +27,20 @@ export class CartService{
 
     addToCart(item: Product){
         item.price = Number(item.price)
-        const itemQuantity = {...item, quantity: item.quantity ?? 1}
         const current = this.cartItemsSignal()
-        const updated = [...current, itemQuantity]
-        this.cartItemsSignal.set(updated)
-        this.cartCount.set(updated.length)
+        const existingItem = current.findIndex(i => i.id ===item.id)
+
+        if(existingItem !== -1){
+            const updated = [...current]
+            updated[existingItem].quantity = (updated[existingItem].quantity || 1) + 1
+            this.cartItemsSignal.set(updated)
+
+        } else {
+
+        const itemQuantity = {...item, quantity: 1}
+        this.cartItemsSignal.set([...current, itemQuantity])
+        }
+        this.cartCount.set(this.cartItemsSignal().length)
         this.calculateTotalPrice()
     }
 
@@ -82,7 +91,7 @@ export class CartService{
         this.checkoutItems = items;
       }
 
-      getCheckoutItems(): Product[] {
+    getCheckoutItems(): Product[] {
         return this.checkoutItems;
       }
 

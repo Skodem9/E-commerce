@@ -5,7 +5,7 @@ body {
     background-image: url('/assets/homepic.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;  /* 👈 makes background stay fixed */
+    background-attachment: fixed;  
 }
 
 .header {
@@ -15,7 +15,7 @@ body {
 
 .router {
     height: 80%;
-    overflow-y: auto;    /* enables vertical scroll */
+    overflow-y: auto;   
    
 
 }
