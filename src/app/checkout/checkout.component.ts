@@ -30,7 +30,6 @@ export class CheckoutComponent implements OnInit {
 
   placeOrder(): void {
     this.userService.currentUser.subscribe(user => {
-      console.log('placing order for user:', user)
       if (user) {
         const order = {
           id: new Date().getTime().toString(),

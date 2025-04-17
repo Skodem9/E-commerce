@@ -35,7 +35,7 @@ searchProduct: string = ''
 
   signOut(){
     this.userService.clearCurrentUser()
-    this.router.navigate(['/signIn'])
+    // this.router.navigate(['/signIn'])
   }
 
   onSearch(){

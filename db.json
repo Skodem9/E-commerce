@@ -670,6 +670,13 @@
       "username": "apple",
       "email": "apple@gmail.com",
       "password": "iphone"
+    },
+    {
+      "id": "1744902274342",
+      "fullname": "testone",
+      "username": "testone",
+      "email": "testone@gmail.com",
+      "password": "12345"
     }
   ],
   "Orders": [
@@ -768,16 +775,40 @@
       "total": 305
     },
     {
-      "id": "1744827780238",
-      "userId": "1744827641144",
-      "username": "apple",
-      "date": "2025-04-16T18:23:00.238Z",
+      "id": "1744902676493",
+      "userId": "1744827504503",
+      "username": "test1",
+      "date": "2025-04-17T15:11:16.493Z",
       "items": [
         {
-          "id": "40",
-          "name": "Zip-Up Hoodie",
-          "img": "/assets/hoodies/hoodies2.png",
-          "price": 45,
+          "id": "1",
+          "name": "Nike Air Jordan 1",
+          "img": "/assets/jordan1.png",
+          "price": 150,
+          "size": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "category": "Sneakers",
+          "gender": "Unisex",
+          "quantity": 4
+        }
+      ],
+      "total": 600
+    },
+    {
+      "id": "1744903909677",
+      "userId": "1744902274342",
+      "username": "testone",
+      "date": "2025-04-17T15:31:49.677Z",
+      "items": [
+        {
+          "id": "39",
+          "name": "Classic Hoodie",
+          "img": "/assets/hoodies/hoodies1.png",
+          "price": 40,
           "size": [
             "S",
             "M",
@@ -785,41 +816,113 @@
             "XL"
           ],
           "category": "Hoodies",
-          "gender": "Male",
-          "quantity": 1
-        },
+          "gender": "Unisex",
+          "quantity": 2
+        }
+      ],
+      "total": 80
+    },
+    {
+      "id": "1744904433802",
+      "userId": "1744827641144",
+      "username": "apple",
+      "date": "2025-04-17T15:40:33.802Z",
+      "items": [
         {
-          "id": "27",
-          "name": "Classic Cargo Pants",
-          "img": "/assets/cargo/cargo2.png",
-          "price": 80,
+          "id": "24",
+          "name": "Chino Trousers",
+          "img": "/assets/trousers/trouser2.png",
+          "price": 60,
           "size": [
             "30",
             "32",
             "34",
             "36"
           ],
-          "category": "Cargo",
+          "category": "Trousers",
           "gender": "Male",
           "quantity": 1
+        }
+      ],
+      "total": 60
+    },
+    {
+      "id": "1744907255645",
+      "userId": "1744827641144",
+      "username": "apple",
+      "date": "2025-04-17T16:27:35.645Z",
+      "items": [
+        {
+          "id": "37",
+          "name": "Leather Jacket",
+          "img": "/assets/jackets/jacket1.png",
+          "price": 150,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "Jackets",
+          "gender": "Male",
+          "quantity": 4
         },
         {
-          "id": "31",
-          "name": "Linen Casual Shirt",
-          "img": "/assets/casuals/casual2.png",
-          "price": 50,
+          "id": "38",
+          "name": "Bomber Jacket",
+          "img": "/assets/jackets/jacket1.png",
+          "price": 95,
           "size": [
             "XS",
             "S",
             "M",
             "L"
           ],
-          "category": "Casual",
+          "category": "Jackets",
+          "gender": "Female",
+          "quantity": 1
+        },
+        {
+          "id": "36",
+          "name": "Denim Jacket",
+          "img": "/assets/jackets/jacket2.png",
+          "price": 85,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "Jackets",
           "gender": "Unisex",
           "quantity": 1
         }
       ],
-      "total": 175
+      "total": 780
+    },
+    {
+      "id": "1744907390423",
+      "userId": "1744827641144",
+      "username": "apple",
+      "date": "2025-04-17T16:29:50.423Z",
+      "items": [
+        {
+          "id": "39",
+          "name": "Classic Hoodie",
+          "img": "/assets/hoodies/hoodies1.png",
+          "price": 40,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "Hoodies",
+          "gender": "Unisex",
+          "quantity": 1
+        }
+      ],
+      "total": 40
     }
   ],
   "CanceledOrders": [
@@ -924,6 +1027,501 @@
         }
       ],
       "total": 385
+    },
+    {
+      "id": "1744902441464",
+      "userId": "1744902274342",
+      "username": "testone",
+      "date": "2025-04-17T15:07:21.464Z",
+      "items": [
+        {
+          "id": "21",
+          "name": "Classic Cotton T-Shirt",
+          "img": "/assets/t-shirts/t-shirt2.png",
+          "price": 25,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "TShirts",
+          "gender": "Unisex",
+          "quantity": 3
+        },
+        {
+          "id": "50",
+          "name": "Chino Trousers",
+          "img": "/assets/trousers/trouser1.png",
+          "price": 60,
+          "size": [
+            "30",
+            "32",
+            "34",
+            "36"
+          ],
+          "category": "Trousers",
+          "gender": "Male",
+          "quantity": 1
+        },
+        {
+          "id": "24",
+          "name": "Chino Trousers",
+          "img": "/assets/trousers/trouser2.png",
+          "price": 60,
+          "size": [
+            "30",
+            "32",
+            "34",
+            "36"
+          ],
+          "category": "Trousers",
+          "gender": "Male",
+          "quantity": 3
+        }
+      ],
+      "total": 315
+    },
+    {
+      "id": "1744902408974",
+      "userId": "1744902274342",
+      "username": "testone",
+      "date": "2025-04-17T15:06:48.974Z",
+      "items": [
+        {
+          "id": "21",
+          "name": "Classic Cotton T-Shirt",
+          "img": "/assets/t-shirts/t-shirt2.png",
+          "price": 25,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "TShirts",
+          "gender": "Unisex",
+          "quantity": 3
+        },
+        {
+          "id": "50",
+          "name": "Chino Trousers",
+          "img": "/assets/trousers/trouser1.png",
+          "price": 60,
+          "size": [
+            "30",
+            "32",
+            "34",
+            "36"
+          ],
+          "category": "Trousers",
+          "gender": "Male",
+          "quantity": 1
+        },
+        {
+          "id": "24",
+          "name": "Chino Trousers",
+          "img": "/assets/trousers/trouser2.png",
+          "price": 60,
+          "size": [
+            "30",
+            "32",
+            "34",
+            "36"
+          ],
+          "category": "Trousers",
+          "gender": "Male",
+          "quantity": 3
+        }
+      ],
+      "total": 315
+    },
+    {
+      "id": "1744902395611",
+      "userId": "1744902274342",
+      "username": "testone",
+      "date": "2025-04-17T15:06:35.611Z",
+      "items": [
+        {
+          "id": "21",
+          "name": "Classic Cotton T-Shirt",
+          "img": "/assets/t-shirts/t-shirt2.png",
+          "price": 25,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "TShirts",
+          "gender": "Unisex",
+          "quantity": 3
+        },
+        {
+          "id": "50",
+          "name": "Chino Trousers",
+          "img": "/assets/trousers/trouser1.png",
+          "price": 60,
+          "size": [
+            "30",
+            "32",
+            "34",
+            "36"
+          ],
+          "category": "Trousers",
+          "gender": "Male",
+          "quantity": 1
+        },
+        {
+          "id": "24",
+          "name": "Chino Trousers",
+          "img": "/assets/trousers/trouser2.png",
+          "price": 60,
+          "size": [
+            "30",
+            "32",
+            "34",
+            "36"
+          ],
+          "category": "Trousers",
+          "gender": "Male",
+          "quantity": 3
+        }
+      ],
+      "total": 315
+    },
+    {
+      "id": "1744902470497",
+      "userId": "1744902274342",
+      "username": "testone",
+      "date": "2025-04-17T15:07:50.497Z",
+      "items": [
+        {
+          "id": "21",
+          "name": "Classic Cotton T-Shirt",
+          "img": "/assets/t-shirts/t-shirt2.png",
+          "price": 25,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "TShirts",
+          "gender": "Unisex",
+          "quantity": 3
+        },
+        {
+          "id": "50",
+          "name": "Chino Trousers",
+          "img": "/assets/trousers/trouser1.png",
+          "price": 60,
+          "size": [
+            "30",
+            "32",
+            "34",
+            "36"
+          ],
+          "category": "Trousers",
+          "gender": "Male",
+          "quantity": 1
+        },
+        {
+          "id": "24",
+          "name": "Chino Trousers",
+          "img": "/assets/trousers/trouser2.png",
+          "price": 60,
+          "size": [
+            "30",
+            "32",
+            "34",
+            "36"
+          ],
+          "category": "Trousers",
+          "gender": "Male",
+          "quantity": 3
+        }
+      ],
+      "total": 315
+    },
+    {
+      "id": "1744902493579",
+      "userId": "1744827641144",
+      "username": "apple",
+      "date": "2025-04-17T15:08:13.579Z",
+      "items": [
+        {
+          "id": "21",
+          "name": "Classic Cotton T-Shirt",
+          "img": "/assets/t-shirts/t-shirt2.png",
+          "price": 25,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "TShirts",
+          "gender": "Unisex",
+          "quantity": 3
+        },
+        {
+          "id": "50",
+          "name": "Chino Trousers",
+          "img": "/assets/trousers/trouser1.png",
+          "price": 60,
+          "size": [
+            "30",
+            "32",
+            "34",
+            "36"
+          ],
+          "category": "Trousers",
+          "gender": "Male",
+          "quantity": 1
+        },
+        {
+          "id": "24",
+          "name": "Chino Trousers",
+          "img": "/assets/trousers/trouser2.png",
+          "price": 60,
+          "size": [
+            "30",
+            "32",
+            "34",
+            "36"
+          ],
+          "category": "Trousers",
+          "gender": "Male",
+          "quantity": 3
+        }
+      ],
+      "total": 315
+    },
+    {
+      "id": "1744833728170",
+      "userId": "1744827641144",
+      "username": "apple",
+      "date": "2025-04-16T20:02:08.170Z",
+      "items": [
+        {
+          "id": "36",
+          "name": "Denim Jacket",
+          "img": "/assets/jackets/jacket2.png",
+          "price": 85,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "Jackets",
+          "gender": "Unisex",
+          "quantity": 1
+        },
+        {
+          "id": "37",
+          "name": "Leather Jacket",
+          "img": "/assets/jackets/jacket1.png",
+          "price": 150,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "Jackets",
+          "gender": "Male",
+          "quantity": 1
+        }
+      ],
+      "total": 235
+    },
+    {
+      "id": "1744827780238",
+      "userId": "1744827641144",
+      "username": "apple",
+      "date": "2025-04-16T18:23:00.238Z",
+      "items": [
+        {
+          "id": "40",
+          "name": "Zip-Up Hoodie",
+          "img": "/assets/hoodies/hoodies2.png",
+          "price": 45,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "Hoodies",
+          "gender": "Male",
+          "quantity": 1
+        },
+        {
+          "id": "27",
+          "name": "Classic Cargo Pants",
+          "img": "/assets/cargo/cargo2.png",
+          "price": 80,
+          "size": [
+            "30",
+            "32",
+            "34",
+            "36"
+          ],
+          "category": "Cargo",
+          "gender": "Male",
+          "quantity": 1
+        },
+        {
+          "id": "31",
+          "name": "Linen Casual Shirt",
+          "img": "/assets/casuals/casual2.png",
+          "price": 50,
+          "size": [
+            "XS",
+            "S",
+            "M",
+            "L"
+          ],
+          "category": "Casual",
+          "gender": "Unisex",
+          "quantity": 1
+        }
+      ],
+      "total": 175
+    },
+    {
+      "id": "1744902522758",
+      "userId": "1744827641144",
+      "username": "apple",
+      "date": "2025-04-17T15:08:42.758Z",
+      "items": [
+        {
+          "id": "21",
+          "name": "Classic Cotton T-Shirt",
+          "img": "/assets/t-shirts/t-shirt2.png",
+          "price": 25,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "TShirts",
+          "gender": "Unisex",
+          "quantity": 3
+        },
+        {
+          "id": "50",
+          "name": "Chino Trousers",
+          "img": "/assets/trousers/trouser1.png",
+          "price": 60,
+          "size": [
+            "30",
+            "32",
+            "34",
+            "36"
+          ],
+          "category": "Trousers",
+          "gender": "Male",
+          "quantity": 1
+        },
+        {
+          "id": "24",
+          "name": "Chino Trousers",
+          "img": "/assets/trousers/trouser2.png",
+          "price": 60,
+          "size": [
+            "30",
+            "32",
+            "34",
+            "36"
+          ],
+          "category": "Trousers",
+          "gender": "Male",
+          "quantity": 3
+        }
+      ],
+      "total": 315
+    },
+    {
+      "id": "1744902660437",
+      "userId": "1744827504503",
+      "username": "test1",
+      "date": "2025-04-17T15:11:00.437Z",
+      "items": [
+        {
+          "id": "21",
+          "name": "Classic Cotton T-Shirt",
+          "img": "/assets/t-shirts/t-shirt2.png",
+          "price": 25,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "TShirts",
+          "gender": "Unisex",
+          "quantity": 3
+        }
+      ],
+      "total": 75
+    },
+    {
+      "id": "1744907280515",
+      "userId": "1744827641144",
+      "username": "apple",
+      "date": "2025-04-17T16:28:00.515Z",
+      "items": [
+        {
+          "id": "37",
+          "name": "Leather Jacket",
+          "img": "/assets/jackets/jacket1.png",
+          "price": 150,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "Jackets",
+          "gender": "Male",
+          "quantity": 4
+        },
+        {
+          "id": "38",
+          "name": "Bomber Jacket",
+          "img": "/assets/jackets/jacket1.png",
+          "price": 95,
+          "size": [
+            "XS",
+            "S",
+            "M",
+            "L"
+          ],
+          "category": "Jackets",
+          "gender": "Female",
+          "quantity": 1
+        },
+        {
+          "id": "36",
+          "name": "Denim Jacket",
+          "img": "/assets/jackets/jacket2.png",
+          "price": 85,
+          "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "category": "Jackets",
+          "gender": "Unisex",
+          "quantity": 1
+        }
+      ],
+      "total": 780
     }
   ]
 }

@@ -1,6 +1,4 @@
-import { HttpClient } from "@angular/common/http";
 import { Injectable, signal } from "@angular/core";
-import { Observable } from "rxjs";
 import { Product } from "../interfaces/Product";
 
 @Injectable({
@@ -14,7 +12,7 @@ export class CartService{
 
 
     constructor(){
-        this.cartCount.set(this.cartItemsSignal().length)
+        this.updateCartCount()
         this.calculateTotalPrice()
 
     }
@@ -40,7 +38,7 @@ export class CartService{
         const itemQuantity = {...item, quantity: 1}
         this.cartItemsSignal.set([...current, itemQuantity])
         }
-        this.cartCount.set(this.cartItemsSignal().length)
+        this.updateCartCount()
         this.calculateTotalPrice()
     }
 
@@ -48,7 +46,7 @@ export class CartService{
         const current = this.cartItemsSignal()
         const updated = current.filter(i => i.id !== item.id)
         this.cartItemsSignal.set(updated)
-        this.cartCount.set(updated.length)
+        this.updateCartCount()
         this.calculateTotalPrice()
     }
 
@@ -56,7 +54,7 @@ export class CartService{
         this.checkoutItems = []
     }
     clearCart() {
-        this.cartItems.set([])
+        this.cartItemsSignal.set([])
         this.cartCount.set(0)
         this.totalPrice.set(0)
         
@@ -66,8 +64,9 @@ export class CartService{
         const current = this.cartItemsSignal()
         const updated = current.map(i =>
             i.id === item.id ? {...i, quantity: i.quantity + change} : i
-        )
+        ).filter(i => i.quantity > 0)
         this.cartItemsSignal.set(updated)
+        this.updateCartCount()
         this.calculateTotalPrice()
     }
 
@@ -81,6 +80,12 @@ export class CartService{
             }
         }
         this.totalPrice.set(total)
+    }
+
+    updateCartCount(){
+        const current = this.cartItemsSignal()
+        const totalCount = current.reduce((sum, item) => sum + (item.quantity || 0), 0) 
+        this.cartCount.set(totalCount)
     }
 
     getTotalPrice(){
