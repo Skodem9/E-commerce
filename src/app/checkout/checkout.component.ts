@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { CartService } from '../header/services/cart.service';
 import { Product } from '../header/interfaces/Product';
 import { UsersService } from '../header/services/user.service';
@@ -14,6 +14,8 @@ export class CheckoutComponent implements OnInit {
   checkoutItems: (Product) [] = [];
   total: number = 0;
   totalPrice: any
+  cartCount = signal(0)
+
 
 
   constructor(
@@ -29,21 +31,22 @@ export class CheckoutComponent implements OnInit {
   }
 
   placeOrder(): void {
+    
     this.userService.currentUser.subscribe(user => {
       if (user) {
         const order = {
           id: new Date().getTime().toString(),
           userId: user.id,
           username: user.username,
-          date: new Date().toISOString(),
+          orderDate: new Date().toISOString(),
           items: this.checkoutItems,
           total: this.total
         };
-        this.http.post('http://localhost:3000/Orders', order).subscribe(() => {
-          alert('Order placed successfully!');
-          this.cartService.clearCart();
-          this.cartService.clearCheckout()
-          this.router.navigate(['/myOrders']);
+        this.checkoutItems = []
+        this.cartService.clearCart();
+        alert('Order placed successfully!');
+        this.router.navigate(['/myOrders']);
+        this.http.post('http://localhost:3000/Orders', order).subscribe(() => { 
         });
       } else {
         alert('Please login to place order.');

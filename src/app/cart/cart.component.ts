@@ -2,8 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Product} from '../header/interfaces/Product';
 import { CartService } from '../header/services/cart.service';
-import { UsersService } from '../header/services/user.service';
-import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({
@@ -24,8 +22,6 @@ export class CartComponent implements OnInit {
   
     constructor(
       private cartService: CartService,
-      private userService: UsersService,
-      private http: HttpClient,
       private router: Router
 
     ) {

@@ -26,7 +26,7 @@ export class UsersService{
 
     setCurrentUser(user: Users){
         this.currentUserSubject.next(user)
-    }
+    }   
 
     clearCurrentUser(){
         this.currentUserSubject.next(null)

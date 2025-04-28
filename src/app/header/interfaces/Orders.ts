@@ -4,7 +4,7 @@ export interface Orders{
     id: string,
     userId: string,
     username: string,
-    date: string,
+    orderDate: string,
     items: Product[],
     total: number
 }
